@@ -1,0 +1,21 @@
+{
+  "name": "count-hours",
+  "version": "1.0.0",
+  "description": "A small script to convert quarter hour wise time trackings into a nicely formatted table.",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  },
+  "author": "Frederik Kutsch",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "luxon": "^3.4.3",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.3.2",
+    "@types/node": "^20.6.3",
+    "@types/prompt-sync": "^4.2.0"
+  }
+}
