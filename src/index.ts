@@ -80,9 +80,9 @@ const removeUnnecessaryDates = (
 
 // Ask user about start and end date.
 console.log("Please enter the start date (DD.MM.YYYY)");
-const startDate: DateTime = DateTime.fromFormat("19.09.2023", "dd.MM.yyyy"); //readDate();
+const startDate: DateTime = readDate();
 console.log("Please enter the end date (DD.MM.YYYY)");
-const endDate: DateTime = DateTime.fromFormat("22.09.2023", "dd.MM.yyyy"); //readDate();
+const endDate: DateTime = readDate();
 
 // If the end date is before the start date, throw an error.
 if (endDate < startDate) {

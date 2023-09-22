@@ -1,0 +1,2 @@
+- Export the accompanying Numbers file as CSV into ~/Stunden.csv.
+- Run this script using `npm run start`
