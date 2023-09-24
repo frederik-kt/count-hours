@@ -1,2 +1,2 @@
-- Export the accompanying Numbers file as CSV into ~/Stunden.csv.
+- Export the accompanying Numbers file as CSV into ~/hours.csv.
 - Run this script using `npm run start`

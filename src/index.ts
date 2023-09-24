@@ -10,7 +10,7 @@ const readAndParseCSV = (): string[][] => {
   if (!homeDir) {
     process.exit(1);
   }
-  const filePath = path.join(homeDir, "Stunden.csv");
+  const filePath = path.join(homeDir, "hours.csv");
   const fileString = fs.readFileSync(filePath, "utf-8");
   return parseCSV(fileString);
 };
