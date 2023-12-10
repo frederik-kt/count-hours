@@ -20,12 +20,15 @@ const readAndParseCSV = (): string[][] => {
 const dateRegex = /^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[012])\.\d{4}$/;
 const isValidDate = (date: string): boolean => dateRegex.test(date);
 
-const prompt = promptSync();
+const prompt = promptSync({ sigint: true });
 
 const readDate = (): DateTime => {
-  let dateString: string;
+  let dateString: string | null;
   do {
     dateString = prompt("");
+    if (dateString === null) {
+      process.exit(0);
+    }
     if (!isValidDate(dateString)) {
       console.log(
         "Invalid date format. Please try again using the format 'DD.MM.YYYY'"
