@@ -4,7 +4,7 @@ on run argv
     
     set theFilePath to POSIX file (item 1 of argv)
     set theNumbersFileFolder to theFilePath as alias
-    set theCsvFolder to POSIX file "/Users/my.name" # Enter the path to your home folder
+    set theCsvFolder to POSIX file "/Users/your.name" # Enter the path to your home folder
     tell application "System Events" to set theNumbersFileIterator to theNumbersFileFolder's items whose name extension = "numbers"
     
     repeat with aNumbersFile in theNumbersFileIterator
