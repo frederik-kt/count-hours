@@ -1,6 +1,7 @@
 # Manual Execution
 
 - Run `npm install`.
+- Install typescript using `npm install -g typescript`.
 - Export the content from `hours.numbers` as CSV into `~/hours.csv`. You can either do this manually each time or use the script provided (see Script Setup below).
 - Run this script using `npm run start` (or use the Script Setup below).
 
